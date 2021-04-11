@@ -2,20 +2,20 @@ import {
   Test,
   TestingModule,
 } from "@nestjs/testing";
-import { CatsController } from "./cats.controller";
+import { TeapotController } from "./teapot.controller";
 
-describe("CatsController", () => {
-  let controller: CatsController;
+describe("TeapotController", () => {
+  let controller: TeapotController;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule(
       {
-        controllers: [CatsController],
+        controllers: [TeapotController],
       },
     ).compile();
 
-    controller = module.get<CatsController>(
-      CatsController,
+    controller = module.get<TeapotController>(
+      TeapotController,
     );
   });
 

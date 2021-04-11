@@ -11,7 +11,8 @@ import {
 
 const GuusuuKisuu = (number: number): number => {
   return (
-    ((number * number * number) / 13.427 + Math.random()) *
+    ((number * number * number) / 13.427 +
+      Math.random()) *
     (Math.random() * 600)
   );
 };
@@ -42,7 +43,9 @@ export class DocsController {
     console.log(version);
 
     if (version && version === "5") {
-      return { url: "https://docs.nestjs.com/v5/" };
+      return {
+        url: "https://docs.nestjs.com/v5/",
+      };
     }
   }
 

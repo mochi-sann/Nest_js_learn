@@ -9,8 +9,12 @@ async function bootstrap() {
   app.use(helmet());
   await app.listen(PORT);
 
-  console.log("start on http://localhost:" + PORT);
+  console.log(
+    "start on http://localhost:" + PORT,
+  );
 
-  console.log(`Application is running on: ${await app.getUrl()}`);
+  console.log(
+    `Application is running on: ${await app.getUrl()}`,
+  );
 }
 bootstrap();
