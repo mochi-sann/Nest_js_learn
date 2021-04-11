@@ -5,9 +5,10 @@ import { TasksModule } from "./tasks/tasks.module";
 import { CatsController } from "./cats/cats.controller";
 import { DocsController } from "./docs/docs.controller";
 import { CatsService } from "./cats/cats.service";
+import { CatsModule } from './cats/cats.module';
 
 @Module({
-  imports: [TasksModule],
+  imports: [TasksModule, CatsModule],
   controllers: [AppController, CatsController, DocsController],
   providers: [AppService, CatsService],
 })
